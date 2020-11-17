@@ -30,7 +30,7 @@ Lista de notações matemáticas utilizadas em meus trabalhos.
 
 ## Composição de funções
 
-Funções compostas, como ![f(g(x))][f g x], ![f][f] de ![g][g] de ![x][x], ou ![(f\circle g)(x)][f circ g x].
+Funções compostas, como ![f(g(x))][f g x], ![f][f] de ![g][g] de ![x][x], ou ![(f\circ g)(x)][f circ g x].
 
 ### Composição normal de funções
 
@@ -45,21 +45,21 @@ Dada uma função ![f y][f y] e outra ![g x][g x], ![f][f] composta ![g][g] é u
 ### Composição de n-uplas
 
 ] ![f][f] uma função da forma ![f = w(x, y, z)](https://render.githubusercontent.com/render/math?math=f%20%3D%20w(x%2C%20y%2C%20z)): 
-Seria interessante escrever ![f = w\circle(x, y, z)](https://render.githubusercontent.com/render/math?math=f%20%3D%20w%5Ccircle(x%2C%20y%2C%20z)). 
+Seria interessante escrever ![f = w\circ(x, y, z)](https://render.githubusercontent.com/render/math?math=f%20%3D%20w%5Ccirc(x%2C%20y%2C%20z)). 
 Ainda, se ![x = x(a), y = y(a), z = z(a)](https://render.githubusercontent.com/render/math?math=x%20%3D%20x(a)%2C%20y%20%3D%20y(a)%2C%20z%20%3D%20z(a)), teremos ![f = w(x, y, z) = w(x(a), y(a), z(a))](https://render.githubusercontent.com/render/math?math=f%20%3D%20w(x%2C%20y%2C%20z)%20%3D%20w(x(a)%2C%20y(a)%2C%20z(a))).
 
 
 ![\] u = (x, y, z):](https://render.githubusercontent.com/render/math?math=%5D%20u%20%3D%20(x%2C%20y%2C%20z)%3A)
 ![u = (x(a), y(a), z(a))](https://render.githubusercontent.com/render/math?math=u%20%3D%20(x(a)%2C%20y(a)%2C%20z(a)))
-![f = w(u) = w(u(a)) = w\circle u\circle a](https://render.githubusercontent.com/render/math?math=f%20%3D%20w(u)%20%3D%20w(u(a))%20%3D%20w%5Ccircle%20u%5Ccircle%20a)
-![\therefore f = w\circle(x, y, z)\circle a](https://render.githubusercontent.com/render/math?math=%5Ctherefore%20f%20%3D%20w%5Ccircle(x%2C%20y%2C%20z)%5Ccircle%20a)
+![f = w(u) = w(u(a)) = w\circ u\circ a](https://render.githubusercontent.com/render/math?math=f%20%3D%20w(u)%20%3D%20w(u(a))%20%3D%20w%5Ccirc%20u%5Ccirc%20a)
+![\therefore f = w\circ(x, y, z)\circ a](https://render.githubusercontent.com/render/math?math=%5Ctherefore%20f%20%3D%20w%5Ccirc(x%2C%20y%2C%20z)%5Ccirc%20a)
 
 Nesta forma, temos que: dada uma n-upla n-dimensional (de comprimento n) de funções, chamada de ![vec x = x_i][vec x = x_i]. 
 Temos que:
 
 ```latex
-\vec{x}(a) = \vec{x}\circle a\\
-= (x_1, x_2, ... x_n)\circle a\\
+\vec{x}(a) = \vec{x}\circ a\\
+= (x_1, x_2, ... x_n)\circ a\\
 = (x_1(a), x_2(a), ... x_n(a))
 ```
 
@@ -95,13 +95,13 @@ Pela nova definição, ![n nat][n nat].
 ### Reversão de funções
 
 Mais uma vez, pela regra recursiva, a regra 2, tomemos outro exemplo (com senos): 
-```i = \sin\circle^0 = \sin(\sin\circle^{0-1}) = \sin(\sin\circle^{-1})```. Obtém-se a informação de que o seno de uma função desconhecida é igual à função identidade. Antes de definir algo em relação à ```\sin\circle^{-1}```, coloquemos tudo na função reversa ao seno, arcseno: 
-```\arcsin(i) = \arcsin(\sin(\sin\circle^{-1})) = \sin\circle^{-1}``` 
-Como arcseno é reversa à seno, ```\arcsin(\sin) = \sin(\arcsin) = i```. Com esta substituição, extraímos que ```\arcsin = \sin\circle^{-1}```. 
-Assim, se ```f``` é uma função, ```f\circle^{-1}``` é a função reversa à ```f```. 
+```i = \sin\circ^0 = \sin(\sin\circ^{0-1}) = \sin(\sin\circ^{-1})```. Obtém-se a informação de que o seno de uma função desconhecida é igual à função identidade. Antes de definir algo em relação à ```\sin\circ^{-1}```, coloquemos tudo na função reversa ao seno, arcseno: 
+```\arcsin(i) = \arcsin(\sin(\sin\circ^{-1})) = \sin\circ^{-1}``` 
+Como arcseno é reversa à seno, ```\arcsin(\sin) = \sin(\arcsin) = i```. Com esta substituição, extraímos que ```\arcsin = \sin\circ^{-1}```. 
+Assim, se ```f``` é uma função, ```f\circ^{-1}``` é a função reversa à ```f```. 
 Lê-se: "f composta -1 é a função reversa à f".
 
-Com atenção especial as funções trigonométricas, podemos escrever ```\sin\circle^{-1}``` ao invés de ```\arcsin``` ou ainda, a confusa ```\sin^{-1}```.
+Com atenção especial as funções trigonométricas, podemos escrever ```\sin\circ^{-1}``` ao invés de ```\arcsin``` ou ainda, a confusa ```\sin^{-1}```.
 
 Reescrevendo a regra da anulação de composição, a regra 3:
 
@@ -168,11 +168,11 @@ Imagens em LaTeX vindas de ![LaTeX](https://alexanderrodin.com/github-latex-mark
 [x_i]: https://render.githubusercontent.com/render/math?math=x_i
 [a]: https://render.githubusercontent.com/render/math?math=a
 [f g x]: https://render.githubusercontent.com/render/math?math=f(g(x))
-[f circ g x]: https://render.githubusercontent.com/render/math?math=(f%5Ccircle%20g)(x)
+[f circ g x]: https://render.githubusercontent.com/render/math?math=(f%5Ccirc%20g)(x)
 [f y]: https://render.githubusercontent.com/render/math?math=f(y)
 [g x]: https://render.githubusercontent.com/render/math?math=g(x)
-[f c 0]: https://render.githubusercontent.com/render/math?math=f%5Ccircle%5E0%20%3D%20i
-[f c 2]: https://render.githubusercontent.com/render/math?math=f(f)%20%3D%20f%5Ccircle%20f%20%3D%20f%5Ccircle%5E2
+[f c 0]: https://render.githubusercontent.com/render/math?math=f%5Ccirc%5E0%20%3D%20i
+[f c 2]: https://render.githubusercontent.com/render/math?math=f(f)%20%3D%20f%5Ccirc%20f%20%3D%20f%5Ccirc%5E2
 [n nat]: https://render.githubusercontent.com/render/math?math=n%5Cin%5Cmathbb%7BN%7D
 [n nat-0]: https://render.githubusercontent.com/render/math?math=n%5Cin%5Cmathbb%7BN%7D_*
 [n int]: https://render.githubusercontent.com/render/math?math=n%5Cin%5Cmathbb%7BZ%7D
